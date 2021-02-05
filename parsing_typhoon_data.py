@@ -1,14 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-
-
-
-# In[6]:
-
 
 import re
 import numpy as np
@@ -71,25 +60,4 @@ print(tyPhoonDict["1_OWEN"][:])
 
 for k in tyPhoonDict.keys():
     print(tyPhoonDict[k][:])
-
-
-            
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
