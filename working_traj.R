@@ -29,7 +29,7 @@ WP.df <- mutate(WP.basin.df,
 substorms <- WP.df %>% filter(SEASON %in% 1999:2010 & !(NAME == "NOT NAMED")) %>%
   mutate(ID = as.factor(paste(NAME, SEASON, sep = ".")))
 # Google api key and map
-register_google(key = 'AIzaSyAuUungbfvHMqSnfUN8wvEJwRhPP38OSmE')
+register_google(key = '********************************')
 map <- ggmap(get_googlemap(center = c(lon=145, lat=40), 
                            zoom=3, maptype="terrain",
                            color="bw", scale=2), extent="device")
