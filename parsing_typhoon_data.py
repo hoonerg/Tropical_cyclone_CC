@@ -49,12 +49,13 @@ for line in fileHandler:
         tyPhoonDict[currentKey] = result
 
         
-        
+# Headlines        
 for name in tyPhoonDict:
     tyPhoonDict[name] = tyPhoonDict[name][1:, :]
     
 columns = np.array(["date/time", "Indicator", "grade", "latitude", "longitude", "central_pressure"])
 
+# testing
 print(tyPhoonDict["1_OWEN"][:])
 
 for k in tyPhoonDict.keys():
