@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 import numpy.ma as ma
 import pandas as pd
@@ -27,46 +21,11 @@ from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 import matplotlib.ticker as mticker
 
 
-# In[44]:
-
-
 filename = 'IBTrACS.WP.v04r00.nc'
 cubes = iris.load(filename)
 cubes_con = iris.load(filename, ['season', 'wmo_pres', 'iso_time'])
 
-
-# In[37]:
-
-
-print(cubes)
-
-
-# In[41]:
-
-
-print(cubes_con)
-
-
-# In[21]:
-
-
 ncfile = Dataset('IBTrACS.WP.v04r00.nc')
-
-
-# In[22]:
-
-
-print(list(ncfile.variables))
-
-
-# In[23]:
-
-
-print(ncfile.variables)
-
-
-# In[24]:
-
 
 time = ncfile.variables['time']
 year = ncfile.variables['season']
@@ -77,10 +36,6 @@ lon = ncfile.variables['lon']
 #tas = ncfile.variables['tas']
 #lat <- list.reverse(lat)
 #lat = flipud(rot180(lat))
-
-
-# In[25]:
-
 
 plt.plot(year, pres)
 plt.show()
