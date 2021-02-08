@@ -9,10 +9,8 @@ WP.basin = read.csv(paste(noaa, "ibtracs.WP.list.v04r00.csv", sep = ""), strings
 
 # Delete info of variations
 WP.basin <- WP.basin[-1,]
-
 # Pasing data in tbl_df
 WP.basin.df <- tbl_df(WP.basin)
-
 # Season, Latitude, Logitude : string -> number
 WMO_WIND : str -> num & not -> m/s
 
